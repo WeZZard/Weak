@@ -48,7 +48,7 @@ class WeakTests: XCTestCase {
         
         for lhs in objects {
             for rhs in objects {
-                XCTAssert((Weak(lhs) == Weak(rhs)) == (lhs.isEqual(to: rhs)))
+                XCTAssert((Weak(lhs) == Weak(rhs)) == (lhs.isEqual(to: rhs as String)))
             }
         }
     }
